@@ -1,0 +1,4 @@
+.dark .page-item button > img,
+.page-item button:hover > img {
+  filter: invert(1) grayscale(1);
+}
