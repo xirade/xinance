@@ -1,28 +1,31 @@
-import { useMemo } from "react";
+import { useCallback, useMemo } from "react";
 import { Link } from "react-router-dom";
-import LoadingButton from "src/components/LoadingButton";
-import debounce from "src/utils/debounce";
+import LoadingButton from "./LoadingButton";
+import debounce from "../utils/debounce";
 
 export default function AuthInputs({
   isPending,
   error,
-  user,
   setUser,
   onSubmit,
   authType
 }) {
   // update user properties
-  const handleChange = (e) => {
-    const { name, value } = e.target;
+  const handleChange = useCallback(
+    (e) => {
+      const { name, value } = e.target;
 
-    setUser((prevState) => ({
-      ...prevState,
-      [name]: value
-    }));
-  };
+      setUser((prevState) => ({
+        ...prevState,
+        [name]: value
+      }));
+    },
+    [setUser]
+  );
+  
   const debouncedChangeHandler = useMemo(
     () => (event) => debounce(() => handleChange(event), 2000),
-    []
+    [handleChange]
   );
 
   return (

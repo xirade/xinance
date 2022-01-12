@@ -1,11 +1,11 @@
 import { useEffect, useMemo, useState } from "react";
-import Loader from "src/components/Loader";
-import Pagination from "src/components/Pagination";
-import TableBar from "src/components/TableBar";
-import TransactionList from "src/components/TransactionList";
-import { useAppContext } from "src/hooks/useAppContext";
-import { useCollection } from "src/hooks/useCollection";
-import debounce from "src/utils/debounce";
+import Loader from "../../components/Loader";
+import Pagination from "../../components/Pagination";
+import TableBar from "../../components/TableBar";
+import TransactionList from "../../components/TransactionList";
+import { useAppContext } from "../../hooks/useAppContext";
+import { useCollection } from "../../hooks/useCollection";
+import debounce from "../../utils/debounce";
 import TransactionForm from "./TransactionForm";
 
 export default function Home({ mode }) {

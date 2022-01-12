@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
-import { useAppContext } from "src/hooks/useAppContext";
-import { useLogout } from "src/hooks/useLogout";
+import { useAppContext } from "../hooks/useAppContext";
+import { useLogout } from "../hooks/useLogout";
 
 // icon
 import Logo from "../assets/logo.svg";

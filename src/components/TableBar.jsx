@@ -1,5 +1,4 @@
 export default function TableBar({
-  searchQuery,
   documents,
   debouncedChangeHandler
 }) {

@@ -1,4 +1,4 @@
-import { useFirestore } from "src/hooks/useFirestore";
+import { useFirestore } from "../hooks/useFirestore";
 
 // icon
 import Trashbin from "../assets/trashbin.svg";

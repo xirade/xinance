@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
-import LoadingButton from "src/components/LoadingButton";
-import { useFirestore } from "src/hooks/useFirestore";
+import LoadingButton from "../../components/LoadingButton";
+import { useFirestore } from "../../hooks/useFirestore";
 
 import ChevronUp from "../../assets/chevron-down.svg";
 

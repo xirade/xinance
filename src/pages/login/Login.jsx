@@ -1,6 +1,6 @@
 import { useState } from "react";
-import AuthForm from "src/components/AuthForm";
-import { useLogin } from "src/hooks/useLogin";
+import AuthForm from "../../components/AuthForm";
+import { useLogin } from "../../hooks/useLogin";
 
 export default function Login() {
   const [user, setUser] = useState({ email: "", password: "" });
