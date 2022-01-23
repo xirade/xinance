@@ -22,7 +22,7 @@ export const AppProvider = ({ children }) => {
   const [state, dispatch] = useReducer(appReducer, {
     user: null,
     authIsReady: false,
-    mode: "dark"
+    mode: ""
   });
 
   const changeMode = (mode) => {
